@@ -1,3 +1,1 @@
-module.exports = {
-   url: "mongodb://connection:sheeza123@ds215172.mlab.com:15172/connectivitydb"
-}
+module.exports.conString = "mongodb://admin:admin123@ds117422.mlab.com:17422/demo"
