@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-const conString = require('./config/db.js')
+const conString = require('./config/db.js');
+const mongoDBErrors = require("mongoose-mongodb-errors")
 
 mongoose.Promise = global.Promise;
+mongoose.plugin(mongoDBErrors);
 var mongoURI;
 
 mongoose.connection.on("open", function(ref) {
